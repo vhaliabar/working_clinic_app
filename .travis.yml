@@ -8,6 +8,7 @@ install: pip install -r requirements.txt
 before_script:
   - export FLASK_APP=med_ua
   - export SQLALCHEMY_SILENCE_UBER_WARNING=1
+  - export SQLALCHEMY_TRACK_MODIFICATIONS=False
 
 script:
   - python -m pytest -v
