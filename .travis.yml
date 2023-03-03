@@ -1,0 +1,12 @@
+
+# Config file for automatic testing at travis-ci.org
+sudo: false  # http://docs.travis-ci.com/user/migrating-from-legacy/
+language: python
+python:
+  - 3.6
+install: pip install -r requirements/dev.txt
+before_script:
+  - export FLASK_APP=med_ua
+
+script:
+  - python -m pytest -v
