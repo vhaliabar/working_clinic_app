@@ -20,7 +20,7 @@ def create_app(database_url='sqlite:///med_ua.sqlite3'):
     return app
 
 from med_ua import rotes
-from med_ua.rest_api import api_rotes
+#from med_ua.rest_api import api_rotes
 
 @main.cli.command('db_create')
 def db_create():
